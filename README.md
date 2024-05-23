@@ -1,14 +1,13 @@
 <div>
   <h1>
-    Sumit Chavan 
-    &middot;
+    Sumit Chavan
 
   </h1>
 </div>
 
 A monorepo for my personal website and projects, built with Turborepo and pnpm.
 
-## 📘 [Live demo :](https://portfolio-portfolio-zeta.vercel.app/)
+## [Click here https://portfolio-portfolio-zeta.vercel.app/](https://portfolio-portfolio-zeta.vercel.app/)
 
 A personal website with a blog, project showcase, and work information.
 
