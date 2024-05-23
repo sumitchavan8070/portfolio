@@ -20,7 +20,7 @@ function ProjectsContents() {
         description="Add accent colors for dynamic, flexible color use in your Tailwind CSS project."
         button={{
           title: 'learn more',
-          href: '/docs/tailwindcss-accent',
+          href: 'https://github.com/sumitchavan8070',
         }}
       />
       <SectionContent>
