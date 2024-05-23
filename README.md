@@ -34,14 +34,6 @@ Navigate to the project's root directory:
 cd ./portfolio
 ```
 
-Next, copy the development version of the `env` file:
-
-```
-cp ./apps/enji.dev/env.example ./apps/enji.dev/env.local
-```
-
-Now, you have the `env.local` file ready for configuration:
-
 ```
 DATABASE_URL = your-database-connection-string
 SALT_IP_ADDRESS = super-secret
