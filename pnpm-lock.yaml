@@ -14,7 +14,7 @@ importers:
       prettier-plugin-tailwindcss: 0.2.8_prettier@2.8.8
       turbo: 1.13.3
 
-  apps/enji.dev:
+  apps/portfolio:
     specifiers:
       '@headlessui/react': ^1.7.7
       '@headlessui/tailwindcss': ^0.1.2
@@ -596,7 +596,7 @@ packages:
       '@motionone/easing': 10.17.0
       '@motionone/types': 10.17.0
       '@motionone/utils': 10.17.0
-      tslib: 2.4.0
+      tslib: 2.6.2
     dev: false
 
   /@motionone/dom/10.13.1:
@@ -607,14 +607,14 @@ packages:
       '@motionone/types': 10.17.0
       '@motionone/utils': 10.17.0
       hey-listen: 1.0.8
-      tslib: 2.4.0
+      tslib: 2.6.2
     dev: false
 
   /@motionone/easing/10.17.0:
     resolution: {integrity: sha512-Bxe2wSuLu/qxqW4rBFS5m9tMLOw+QBh8v5A7Z5k4Ul4sTj5jAOfZG5R0bn5ywmk+Fs92Ij1feZ5pmC4TeXA8Tg==}
     dependencies:
       '@motionone/utils': 10.17.0
-      tslib: 2.4.0
+      tslib: 2.6.2
     dev: false
 
   /@motionone/generators/10.17.0:
@@ -622,7 +622,7 @@ packages:
     dependencies:
       '@motionone/types': 10.17.0
       '@motionone/utils': 10.17.0
-      tslib: 2.4.0
+      tslib: 2.6.2
     dev: false
 
   /@motionone/types/10.17.0:
@@ -634,7 +634,7 @@ packages:
     dependencies:
       '@motionone/types': 10.17.0
       hey-listen: 1.0.8
-      tslib: 2.4.0
+      tslib: 2.6.2
     dev: false
 
   /@next/bundle-analyzer/13.5.6:
