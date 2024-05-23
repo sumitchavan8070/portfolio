@@ -1,19 +1,14 @@
 import clsx from 'clsx';
 import Link from 'next/link';
 
-import {
-  ExternalLink,
-  FigmaIcon,
-  GitHubIcon,
-  TwitterIcon,
-} from '@/components/Icons';
+import { ExternalLink, FigmaIcon, GitHubIcon } from '@/components/Icons';
 
 import dayjs from '@/utils/dayjs';
 
 function LastUpdate() {
   return (
     <a
-      href="https://github.com/enjidev/enji.dev"
+      href="https://github.com/sumitchavan8070"
       target="_blank"
       rel="noreferrer nofollow"
       className={clsx('hover:underline')}
@@ -112,25 +107,13 @@ function FooterDescription() {
         About Me
       </div>
       <p className={clsx('mb-4 font-normal leading-relaxed')}>
-        I&apos;m Enji, a <strong>front-end developer</strong> who loves
+        I&apos;m Sumit Chavan, a <strong> Flutter Developer</strong> who loves
         intuitive, clean and modern UI design.
       </p>
       <ul className={clsx('-ml-2 flex gap-1')}>
         <li>
           <a
-            href="https://twitter.com/enjidev"
-            target="_blank"
-            rel="noreferrer nofollow"
-            className={clsx('flex h-9 w-9 items-center justify-center')}
-            aria-label="My Twitter profile"
-            title="My Twitter profile"
-          >
-            <TwitterIcon className={clsx('h-5 w-5')} />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/enjidev"
+            href="https://github.com/sumitchavan8070"
             target="_blank"
             rel="noreferrer nofollow"
             className={clsx('flex h-9 w-9 items-center justify-center')}
@@ -142,7 +125,7 @@ function FooterDescription() {
         </li>
         <li>
           <a
-            href="https://figma.com/@enjidev"
+            href="/"
             target="_blank"
             rel="noreferrer nofollow"
             className={clsx('flex h-9 w-9 items-center justify-center')}
@@ -177,63 +160,25 @@ function Footer() {
                 'sm:flex-row sm:gap-16 lg:mx-0'
               )}
             >
-              <div className={clsx('flex', 'sm:gap-16')}>
-                <FooterGroup
-                  title="Work"
-                  links={[
-                    { title: 'Contact', href: '/work/contact' },
-                    { title: 'Experience', href: '/work/experience' },
-                    {
-                      title: 'Services',
-                      href: '/work/services',
-                      label: 'soon',
-                    },
-                    {
-                      title: 'Skills and Tools',
-                      href: '/work/skills-and-tools',
-                    },
-                    { title: 'Studio', href: '/work/studio' },
-                  ]}
-                />
-                <FooterGroup
-                  title="Learn"
-                  links={[
-                    {
-                      title: 'Docs',
-                      href: '/docs',
-                    },
-                    {
-                      title: 'Personal Blog',
-                      href: '/blog',
-                    },
-                    {
-                      title: 'T.I.L',
-                      href: '/today-i-learned',
-                      label: 'new',
-                    },
-                  ]}
-                />
-              </div>
-              <div className={clsx('flex', 'sm:gap-16')}>
-                <FooterGroup
-                  title="This Site"
-                  links={[
-                    {
-                      title: 'Design Concept',
-                      href: 'https://www.figma.com/community/file/1176392613303840973',
-                      isInternal: false,
-                    },
-                    {
-                      title: 'Source Code',
-                      href: 'https://github.com/enjidev/enji.dev',
-                      isInternal: false,
-                    },
-                    {
-                      title: 'Credits',
-                      href: '/credits',
-                    },
-                  ]}
-                />
+              <div
+                className={clsx(
+                  '-mx-2 flex flex-1 flex-col gap-8',
+                  'sm:flex-row sm:gap-16 lg:mx-0'
+                )}
+              >
+                <div className="flex items-center">
+                  <FooterGroup
+                    title="Work"
+                    links={[
+                      { title: 'Contact', href: '/work/contact' },
+                      { title: 'Experience', href: '/work/experience' },
+                      {
+                        title: 'Skills and Tools',
+                        href: '/work/skills-and-tools',
+                      },
+                    ]}
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -245,7 +190,7 @@ function Footer() {
           )}
         >
           <div className={clsx('font-semibold')}>
-            &copy; {dayjs().format('YYYY')}, Enji Kusnadi
+            &copy; {dayjs().format('YYYY')}, Sumit Chavan
           </div>
           <div className={clsx('text-slate-500', 'dark:text-slate-400')}>
             <LastUpdate />
