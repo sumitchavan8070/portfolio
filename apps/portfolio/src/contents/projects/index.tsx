@@ -15,11 +15,11 @@ function ProjectsContents() {
   return (
     <>
       <SectionTitle
-        title="The dynamic accent colors."
-        caption="tailwindcss-accent"
-        description="Add accent colors for dynamic, flexible color use in your Tailwind CSS project."
+        title="Github"
+        caption="Explore github "
+        description="Discover a variety of projects showcasing my skills in web development, software engineering, and more. Follow my GitHub for the latest updates and contributions."
         button={{
-          title: 'learn more',
+          title: 'Explore more',
           href: 'https://github.com/sumitchavan8070',
         }}
       />
