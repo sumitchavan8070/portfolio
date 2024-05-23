@@ -34,6 +34,8 @@ Navigate to the project's root directory:
 cd ./portfolio
 ```
 
+Now, you have the `env.local` file ready for configuration:
+
 ```
 DATABASE_URL = your-database-connection-string
 SALT_IP_ADDRESS = super-secret
