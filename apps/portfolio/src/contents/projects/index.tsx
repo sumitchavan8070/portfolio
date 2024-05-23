@@ -51,28 +51,28 @@ function ProjectsContents() {
                   browserTabs={[
                     {
                       icon: <GitHubIcon className="h-4 w-4" />,
-                      title: 'enjidev/tailwindcss-accent - GitHub',
+                      title: 'sumitchavan8070/portfolio - GitHub',
                       isActive: currentState === 'github',
                     },
                     {
                       icon: <NpmIcon className="h-4 w-4" />,
-                      title: 'tailwindcss-accent - npm',
+                      title: ' npm',
                       isActive: currentState === 'npm',
                     },
                   ]}
                 >
                   {currentState === 'github' && (
                     <GitHubWireframe
-                      author="enjidev"
+                      author="sumitchavan8070"
                       license="MIT"
-                      repository="tailwindcss-accent"
-                      description="Adds accent colors for more dynamic and flexible color utilization."
+                      repository="portfolio"
+                      description=" beautiful UI for a portfolio should be visually appealing and user-friendly, showcasing your work through a clean, modern design with intuitive navigation."
                     />
                   )}
                   {currentState === 'npm' && (
                     <NpmWireframe
-                      packageName="tailwindcss-accent"
-                      description="Adds accent colors for more dynamic and flexible color utilization."
+                      packageName="portfolio"
+                      description=""
                       isWithTypeScript
                     />
                   )}
