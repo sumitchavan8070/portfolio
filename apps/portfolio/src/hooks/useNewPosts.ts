@@ -13,7 +13,7 @@ export default function useNewPosts() {
       title: string;
       createdAt: string;
     }[]
-  >('/api/content/latest', fetcher, {
+  >('api/activity', fetcher, {
     fallbackData: [],
   });
 
