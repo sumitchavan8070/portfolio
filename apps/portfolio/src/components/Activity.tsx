@@ -52,8 +52,9 @@ function ActivityItem({
         >
           {contentTitle}
         </span>
-        <span className={clsx('lowercase')}>
-          {contentType.replace('POST', 'BLOG POST')}
+        <span className="test">
+          {/* {contentType.replace('POST', 'BLOG POST')} */}
+          {slug}
         </span>
         <span>got new</span>
         {count !== 1 && (
@@ -109,6 +110,20 @@ interface ActivityProps {
 
 function Activity({ onItemClick = () => {} }: ActivityProps) {
   const { data, isLoading } = useContentActivity();
+  // let apiData = null;
+  // try {
+  //   const response = await axios.get('http://10.0.20.132:5000/api/activity', {
+  //     headers: {
+  //       'Cache-Control': 'no-cahce',
+  //       Pragma: 'no-cache',
+  //       Expires: '0',
+  //     },
+  //   });
+  //   apiData = response.data;
+  //   console.log('api success');
+  // } catch (error) {
+  //   console.error('api error');
+  // }
 
   const renderData = () => {
     if (isLoading) {
@@ -145,14 +160,16 @@ function Activity({ onItemClick = () => {} }: ActivityProps) {
     }
 
     return data.map((activity) => {
-      const { createdAt, contentType, slug } = activity;
+      const { createdAt, contentType, slug, redirectUrl } = activity;
 
       const link = contentType === 'POST' ? `/blog/${slug}` : `/docs/${slug}`;
+      const linkdata = redirectUrl;
+      // const linkData = activity['redirect_url'];
 
       return (
         <m.div key={createdAt} variants={animation}>
           <Link
-            href={link}
+            href={linkdata}
             onClick={() => {
               onItemClick();
             }}

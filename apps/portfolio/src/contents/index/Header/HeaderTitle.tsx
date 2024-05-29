@@ -91,7 +91,7 @@ function HeaderTitle() {
               'dark:text-slate-300'
             )}
           >
-            FLutter Developer
+            Flutter Developer
           </strong>{' '}
           who loves intuitive,{' '}
           <span className={clsx('block')}>clean and modern UI design.</span>

@@ -76,6 +76,7 @@ export type TContentActivityShares = {
   slug: string;
   contentTitle: string;
   contentType: ContentType;
+  redirectUrl: string;
 };
 
 export type TContentActivityReaction = {
@@ -86,6 +87,7 @@ export type TContentActivityReaction = {
   slug: string;
   contentTitle: string;
   contentType: ContentType;
+  redirectUrl: string;
 };
 
 export type TContentActivity =

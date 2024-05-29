@@ -10,7 +10,8 @@ export default function useContentActivity() {
     error: isError,
     isLoading,
   } = useSWR<TContentActivity[]>(
-    'https://node-api-k45z.onrender.com/api/activity',
+    // 'https://node-api-j076.onrender.com/api/activity',
+    'http://10.0.20.132:5000/api/activity',
     fetcher,
     {
       fallbackData: [],

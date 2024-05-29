@@ -7,8 +7,8 @@ function DetailOriented() {
     <header className={clsx('mb-8')}>
       <SectionTitle
         title="Keen Eye for Spotting Small Details."
-        caption="Detail Oriented"
-        description="Awareness to ease of access, User Interface consistency, and improved User Experience."
+        caption="Flutter Portfolio"
+        description="As a Flutter developer, I'm driven by a meticulous approach and a sharp eye for detail."
       />
     </header>
   );
