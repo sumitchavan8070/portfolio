@@ -13,7 +13,7 @@ export default function useNewPosts() {
       title: string;
       createdAt: string;
     }[]
-  >('api/activity', fetcher, {
+  >('https://node-api-j076.onrender.com/api/activity', fetcher, {
     fallbackData: [],
   });
 
