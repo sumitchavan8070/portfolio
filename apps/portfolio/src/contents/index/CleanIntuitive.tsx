@@ -22,63 +22,70 @@ type ToDoList = {
   date: string;
   tag1: string;
   tag2: string;
+  link: string;
 };
 
 const content: Content[] = [
   {
-    state: 'typography',
-    title: 'Typography',
-    description: 'Selecting the font type, font size, and font weight.',
+    state: 'textStyles',
+    title: 'Text Styles',
+    description: 'Determining the typeface, size, and weight of fonts.',
   },
   {
-    state: 'spacing',
-    title: 'Spacing',
-    description: 'Positioning and adding spacing between elements.',
+    state: 'layout',
+    title: 'Layout',
+    description: 'Organizing and spacing elements appropriately.',
   },
   {
-    state: 'colors',
-    title: 'Colors',
-    description: 'Choosing a color scheme with sufficient contrast.',
+    state: 'palette',
+    title: 'Palette',
+    description: 'Selecting a color palette with good contrast.',
   },
   {
-    state: 'effects',
-    title: 'Effects',
-    description: 'Add effects like borders, shadows, rounded corners, etc.',
+    state: 'visualEffects',
+    title: 'Visual Effects',
+    description:
+      'Applying visual enhancements like borders, shadows, and rounded edges.',
   },
 ];
 
 const todo: ToDoList[] = [
   {
-    state: 'typography',
-    title: 'Test Typography',
-    description: 'Selecting the font type, font size, and font weight.',
+    state: 'textStyles',
+    title: 'Verify Text Styles',
+    description: 'Determining the typeface, size, and weight of fonts.',
     date: '10:00 AM · Tomorrow',
-    tag1: 'Docs',
-    tag2: 'Support',
+    tag1: 'Documentation',
+    tag2: 'Assistance',
+    link: 'https://api.flutter.dev/flutter/painting/TextStyle-class.html',
   },
   {
-    state: 'spacing',
-    title: 'Test Spacing',
-    description: 'Positioning and adding spacing between elements.',
+    state: 'layout',
+    title: 'Verify Layout',
+    description: 'Organizing and spacing elements appropriately.',
     date: '10:00 AM · Tomorrow',
-    tag1: 'Docs',
-    tag2: 'Support',
+    tag1: 'Documentation',
+    tag2: 'Assistance',
+    link: 'https://docs.flutter.dev/ui/layout',
   },
   {
-    state: 'colors',
-    title: 'Test Colors',
-    description: 'Choosing a color scheme with sufficient contrast.',
+    state: 'palette',
+    title: 'Verify Palette',
+    description: 'Selecting a color palette with good contrast.',
     date: '10:00 AM · Tomorrow',
-    tag1: 'Docs',
-    tag2: 'Support',
+    tag1: 'Documentation',
+    tag2: 'Assistance',
+    link: '',
   },
   {
-    state: 'effects',
-    title: 'Test Effects',
-    description: 'Add effects like borders, shadows, rounded corners, etc.',
+    state: 'visualEffects',
+    title: 'Verify Visual Effects',
+    description:
+      'Applying visual enhancements like borders, shadows, and rounded edges.',
     date: '10:00 AM · Tomorrow',
-    tag1: 'Docs',
-    tag2: 'Support',
+    tag1: 'Documentation',
+    tag2: 'Assistance',
+    link: 'https://docs.flutter.dev/ui/animations/implicit-animations',
   },
 ];
 
@@ -108,8 +115,7 @@ function CleanIntuitive() {
         <SectionTitle
           title="Eye Catching, Modern & Minimalist Design."
           caption="Clean & Intuitive"
-          description="Keep the User Interface clean with a modern touch without
-            compromising the User Experience."
+          description="Keep the User Interface clean with a modern touch, ensuring a seamless User Experience without compromising on aesthetics."
         />
       </header>
       <SectionContent>
@@ -142,6 +148,7 @@ function CleanIntuitive() {
                     date={selectedTodo.date}
                     tag1={selectedTodo.tag1}
                     tag2={selectedTodo.tag2}
+                    link={selectedTodo.link}
                   />
                 )}
               </div>
@@ -152,6 +159,7 @@ function CleanIntuitive() {
                   date="10:00 AM · Tomorrow"
                   tag1="Design"
                   tag2="Components"
+                  link=""
                 />
               </div>
             </div>

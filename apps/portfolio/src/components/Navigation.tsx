@@ -50,6 +50,9 @@ function Navbar() {
               <li>
                 <NavLink title="Projects" href="/projects" />
               </li>
+              <li>
+                <NavLink title="Flutter-Components" href="/today-i-learned" />
+              </li>
 
               <li className={clsx('lg:hidden')} data-accent="blue">
                 <NavLinkDropdown title="Work" items={workLinks} />

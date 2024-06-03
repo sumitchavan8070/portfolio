@@ -1,7 +1,13 @@
 import clsx from 'clsx';
 import Link from 'next/link';
 
-import { ExternalLink, FigmaIcon, GitHubIcon } from '@/components/Icons';
+import {
+  ExternalLink,
+  FigmaIcon,
+  GitHubIcon,
+  InstagramIcon,
+  LinkedInIcon,
+} from '@/components/Icons';
 
 import dayjs from '@/utils/dayjs';
 
@@ -123,16 +129,29 @@ function FooterDescription() {
             <GitHubIcon className={clsx('h-5 w-5')} />
           </a>
         </li>
+
         <li>
           <a
-            href="/"
+            href="https://in.linkedin.com/in/sumit-chavan8070"
             target="_blank"
             rel="noreferrer nofollow"
             className={clsx('flex h-9 w-9 items-center justify-center')}
-            aria-label="My Figma profile"
-            title="My Figma profile"
+            aria-label="My Linked In Profile "
+            title="My Linked In Profile "
           >
-            <FigmaIcon className={clsx('h-5 w-5')} />
+            <LinkedInIcon className={clsx('h-8 w-8')} />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/sumit__1529"
+            target="_blank"
+            rel="noreferrer nofollow"
+            className={clsx('flex h-9 w-9 items-center justify-center')}
+            aria-label="My Instagram Profile "
+            title="My Instagram Profile "
+          >
+            <InstagramIcon className={clsx('h-7 w-7')} />
           </a>
         </li>
       </ul>

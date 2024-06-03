@@ -6,9 +6,9 @@ function PrettyOptimized() {
   return (
     <header className={clsx('mb-8')}>
       <SectionTitle
-        title="Comprehensible and Optimized Code."
+        title="Comprehensible and Optimized Code with MVC Pattern"
         caption="Pretty & Optimized"
-        description="Writing clean code is a top priority while keeping it as optimized as possible."
+        description="I prioritize writing clean, organized code in Flutter by following the Model-View-Controller (MVC) pattern. This ensures a structured approach with separate layers for data management (models), user interface (views), and business logic (controllers). This methodology improves code readability, maintainability, and scalability while enhancing overall performance and efficiency."
       />
     </header>
   );

@@ -2,12 +2,10 @@ import clsx from 'clsx';
 import { m } from 'framer-motion';
 
 import {
-  FigmaIcon,
-  FramerMotionIcon,
+  AndroidStuioIcon,
+  FlutterIcon,
   NextJsIcon,
   ReactIcon,
-  TailwindCssIcon,
-  TypeScriptIcon,
   VSCodeIcon,
 } from '@/components/Icons';
 
@@ -41,24 +39,29 @@ function HeaderTechStack() {
       >
         <m.li variants={animation}>
           <div className={clsx('transition duration-200 hover:text-[#3178C6]')}>
-            <TypeScriptIcon className={clsx('h-6 w-6')} />
+            <FlutterIcon className={clsx('h-6 w-6')} />
           </div>
         </m.li>
+        {/* <m.li variants={animation}>
+          <div className={clsx('transition duration-200 hover:text-[#3178C6]')}>
+            <TypeScriptIcon className={clsx('h-6 w-6')} />
+          </div>
+        </m.li> */}
         <m.li variants={animation}>
           <div className={clsx('transition duration-200 hover:text-[#61DAFB]')}>
             <ReactIcon className={clsx('h-6 w-6')} />
           </div>
         </m.li>
-        <m.li variants={animation}>
+        {/* <m.li variants={animation}>
           <div className={clsx('transition duration-200 hover:text-[#06B6D4]')}>
             <TailwindCssIcon className={clsx('h-6 w-6')} />
           </div>
-        </m.li>
-        <m.li variants={animation}>
+        </m.li> */}
+        {/* <m.li variants={animation}>
           <div className={clsx('transition duration-200 hover:text-[#0055FF]')}>
             <FramerMotionIcon className={clsx('h-6 w-6')} />
           </div>
-        </m.li>
+        </m.li> */}
         <m.li variants={animation}>
           <div
             className={clsx(
@@ -78,7 +81,7 @@ function HeaderTechStack() {
         </m.li>
         <m.li variants={animation}>
           <div className={clsx('transition duration-200 hover:text-[#F24E1E]')}>
-            <FigmaIcon className={clsx('h-6 w-6')} />
+            <AndroidStuioIcon className={clsx('h-6 w-6')} />
           </div>
         </m.li>
       </m.ul>
