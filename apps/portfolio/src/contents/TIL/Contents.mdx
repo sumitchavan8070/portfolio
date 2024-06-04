@@ -1,29 +1,26 @@
 import TIL from '@/components/mdx/TIL';
 import Gist from '@/components/Gist';
 import Image from '@/components/mdx/Image';
+import React from 'react';
 
 <TIL.Items date="2023-01-29">
 
   <TIL.Item>
     
-    ## Tailwind CSS !important modifier
+    ## marquee.dart
 
     <TIL.ItemTags>
-      <TIL.ItemTag>tailwindcss</TIL.ItemTag>
-      <TIL.ItemTag>css</TIL.ItemTag>
+      <TIL.ItemTag>Dart</TIL.ItemTag>
     </TIL.ItemTags>
 
-    Make any utility important by adding a `!` character to the beginning:
 
 
+     <video className="rounded-md"  height="200" width="345" autoPlay loop style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain',  marginBottom: '20px' }}>
+        <source src="assets/videos/marquee.webm" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
 
-    <Image
-      src="/assets/images/marquee.gif"
-      width={240}
-      height={240}
-    />
-
-    [click here ](https://tailwindcss.com/docs/configuration#important-modifier)
+    [marquee.dart](https://gist.github.com/sumitchavan8070/01c8d879d38741a2c747a7fe163578b9#file-marquee-dart)
 
   </TIL.Item>
 
@@ -36,7 +33,7 @@ import Image from '@/components/mdx/Image';
     ## nested backdrop-filter
 
     <TIL.ItemTags>
-      <TIL.ItemTag>css</TIL.ItemTag>
+      <TIL.ItemTag>dart</TIL.ItemTag>
     </TIL.ItemTags>
 
     Backdrop filter tidak akan berhasil jika parent memiliki efek backdrop-filter juga.
@@ -51,19 +48,18 @@ import Image from '@/components/mdx/Image';
 
   <TIL.Item>
 
-    ## pre overflow: scroll inside flex
+    ## vertical tab bar
 
     <TIL.ItemTags>
-      <TIL.ItemTag>css</TIL.ItemTag>
-      <TIL.ItemTag>pre</TIL.ItemTag>
-      <TIL.ItemTag>flex</TIL.ItemTag>
+      <TIL.ItemTag>dart</TIL.ItemTag>
     </TIL.ItemTags>
 
-    Pernah pake `overflow-x: scroll` pada `pre` element tapi ngga ngaruh, malah parent yang ada scrollnya?
+     <video className="rounded-md"  height="200" width="345" autoPlay loop style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain',  marginBottom: '20px' }}>
+        <source src="assets/videos/vertical-tab-bar.webm" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
 
-    Mungkin parentnya didalem `display: flex`. Kalau iya, coba tambahin `min-width: 0` pada parentnya.
-
-    [Credit](https://weblog.west-wind.com/posts/2016/feb/15/flexbox-containers-pre-tags-and-managing-overflow)
+    [vertical_tab_bar-dart](https://gist.github.com/sumitchavan8070/b817417daf50c26b0220abbdf09e5cd9#file-vertical_tab_bar-dart)
 
   </TIL.Item>
 
@@ -166,5 +162,24 @@ import Image from '@/components/mdx/Image';
     Pakai `e.target.valueAsNumber` untuk otomatis mengembalikan nilai input sebagai number. Tidak perlu `parseInt(e.target.value)` lagi.
 
   </TIL.Item>
+</TIL.Items>
 
+<TIL.Items date="2023-01-15">
+
+  <TIL.Item>
+
+    ## calendar-week-view
+
+    <TIL.ItemTags>
+      <TIL.ItemTag>dart</TIL.ItemTag>
+    </TIL.ItemTags>
+
+     <video className="rounded-md"  height="200" width="345" autoPlay loop style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain',  marginBottom: '20px' }}>
+        <source src="assets/videos/calendar-week-view.webm" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+
+    [calendar_week_view](https://gist.github.com/sumitchavan8070/b817417daf50c26b0220abbdf09e5cd9#file-vertical_tab_bar-dart)
+
+  </TIL.Item>
 </TIL.Items>

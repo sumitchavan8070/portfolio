@@ -51,7 +51,10 @@ function Navbar() {
                 <NavLink title="Projects" href="/projects" />
               </li>
               <li>
-                <NavLink title="Flutter-Components" href="/today-i-learned" />
+                <NavLink
+                  title="Flutter-Components"
+                  href="/flutter_components"
+                />
               </li>
 
               <li className={clsx('lg:hidden')} data-accent="blue">
