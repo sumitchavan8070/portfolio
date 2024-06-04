@@ -15,7 +15,7 @@ import React from 'react';
 
 
 
-     <video className="rounded-md"  height="200" width="345" autoPlay loop style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain',  marginBottom: '20px' }}>
+     <video className="rounded-md"  height="120" width="200" autoPlay loop style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain',  marginBottom: '20px' }}>
         <source src="assets/videos/marquee.webm" type="video/mp4" />
         Your browser does not support the video tag.
     </video>
@@ -30,15 +30,22 @@ import React from 'react';
 
   <TIL.Item>
     
-    ## nested backdrop-filter
+    ## MVC (Model-View-Controller)
 
     <TIL.ItemTags>
       <TIL.ItemTag>dart</TIL.ItemTag>
     </TIL.ItemTags>
 
-    Backdrop filter tidak akan berhasil jika parent memiliki efek backdrop-filter juga.
+    MVC (Model-View-Controller) is a design pattern used for developing user interfaces, and it can be implemented in Flutter to organize the code structure efficiently
+    <Image
+      src="/assets/images/mvc.png"
+      alt="Current enjidev workspace"
+      width={220}
+      height={140}
+       style={{ marginLeft: 40 }}
+    />
 
-    [issue](https://bugs.chromium.org/p/chromium/issues/detail?id=993644) &mdash; [workaround](https://stackoverflow.com/questions/60997948/backdrop-filter-not-working-for-nested-elements-in-chrome)
+     [Documention](https://docs.bongthorn.dev/flutter-framework/master-state-management-in-flutter/a-deeper-dive-into-the-provider-library/the-mvc-design-pattern-model-and-controller)
 
   </TIL.Item>
 
@@ -54,7 +61,7 @@ import React from 'react';
       <TIL.ItemTag>dart</TIL.ItemTag>
     </TIL.ItemTags>
 
-     <video className="rounded-md"  height="200" width="345" autoPlay loop style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain',  marginBottom: '20px' }}>
+     <video className="rounded-md"  height="120" width="200" autoPlay loop style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain',  marginBottom: '20px' }}>
         <source src="assets/videos/vertical-tab-bar.webm" type="video/mp4" />
         Your browser does not support the video tag.
     </video>
@@ -65,56 +72,36 @@ import React from 'react';
 
   <TIL.Item>
 
-    ## import mdx file sebagai component
+    ## Text style
 
     <TIL.ItemTags>
-      <TIL.ItemTag>react</TIL.ItemTag>
-      <TIL.ItemTag>mdx</TIL.ItemTag>
+      <TIL.ItemTag>dart</TIL.ItemTag>
     </TIL.ItemTags>
 
-    Import mdx file di component, caranya mirip seperti import component biasa:
-
-    ```ts {copy:false} {footer:false}
-    import Contents from '@/mdx/Contents.mdx';
-
-    // Penggunaan
-    <Contents />
-    ```
-
-    Ternyata ada di [dokumentasinya](https://mdxjs.com/docs/using-mdx/#mdx-content). Biasakan membaca dulu ya gais jangan kaya saya wkwk.
-
-  </TIL.Item>
-
-  <TIL.Item>
-
-    ## :not() pseudo-class
-
-    <TIL.ItemTags>
-      <TIL.ItemTag>css</TIL.ItemTag>
-      <TIL.ItemTag>selector</TIL.ItemTag>
-    </TIL.ItemTags>
-
-    Pake `:not()` ini emang agak tricky, salah penggunaan hasilnya juga bisa ngga sesuai harapan.
-
-    Contoh, styling inline `code` dimana bukan children dari `pre` ataupun `.code-block`. Penggunaannya:
+By using copyWith, you inherit the base style defined in the theme and customize only the necessary properties, promoting a cleaner and more maintainable codebase.
 
     <TIL.DnD>
       <TIL.Dont>
-        ```css {copy:false} {footer:false}
-        :not(pre), :not(.code-block) {
-          > code {
-            background-color: 'red';
-          }
-        }
+        ```dart {copy:false} {footer:false}
+        Text(
+            'This is a styled text',
+            style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+              color: Colors.blue,
+            ),
+          ),
         ```
       </TIL.Dont>
       <TIL.Do>
-        ```css {copy:false} {footer:false}
-        :not(pre, .code-block) {
-          > code {
-            background-color: 'red';
-          }
-        }
+        ```dart {copy:false} {footer:false}
+        Text(
+            'This is a styled text',
+            style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+               color: Colors.blue,
+               fontSize: 24,
+              ),
+           ),
         ```
       </TIL.Do>
     </TIL.DnD>
@@ -151,15 +138,25 @@ import React from 'react';
 <TIL.Items date="2023-01-15">
 
   <TIL.Item>
-    
-    ## e.target.valueAsNumber
 
-    <TIL.ItemTags>
-      <TIL.ItemTag>html</TIL.ItemTag>
-      <TIL.ItemTag>js</TIL.ItemTag>
-    </TIL.ItemTags>
 
-    Pakai `e.target.valueAsNumber` untuk otomatis mengembalikan nilai input sebagai number. Tidak perlu `parseInt(e.target.value)` lagi.
+## Using a common function in Flutter for applying text styles or other repetitive tasks is beneficial for several reasons:
+
+### Consistency
+
+Ensures that the same styling is applied across different parts of the app, maintaining a uniform look and feel.
+
+### Maintainability
+
+Simplifies the process of updating styles. Changes made to the common function are automatically reflected throughout the app, reducing the need to modify multiple instances individually.
+
+### Reusability
+
+Encourages code reuse, reducing redundancy and making the codebase cleaner and more efficient.
+
+### Scalability
+
+Facilitates easier scaling and feature additions. Common functions help manage and extend the codebase with less effort.
 
   </TIL.Item>
 </TIL.Items>
@@ -168,18 +165,18 @@ import React from 'react';
 
   <TIL.Item>
 
-    ## calendar-week-view
+    ## calendar week view
 
     <TIL.ItemTags>
       <TIL.ItemTag>dart</TIL.ItemTag>
     </TIL.ItemTags>
 
-     <video className="rounded-md"  height="200" width="345" autoPlay loop style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain',  marginBottom: '20px' }}>
+     <video className="rounded-md"  height="120" width="200" autoPlay loop style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain',  marginBottom: '20px' }}>
         <source src="assets/videos/calendar-week-view.webm" type="video/mp4" />
         Your browser does not support the video tag.
     </video>
 
-    [calendar_week_view](https://gist.github.com/sumitchavan8070/b817417daf50c26b0220abbdf09e5cd9#file-vertical_tab_bar-dart)
+    [calendar_week_view.dart](https://gist.github.com/sumitchavan8070/8c00baa48f97e5dc56f41caad96c4bda#file-calander_week_view-dart)
 
   </TIL.Item>
 </TIL.Items>
