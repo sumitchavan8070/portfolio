@@ -7,7 +7,7 @@ interface ColorAccentProviderProps {
 }
 
 function ColorAccentProvider({
-  defaultScheme = 'violet',
+  defaultScheme = 'blue',
   children,
 }: ColorAccentProviderProps) {
   const { pathname } = useRouter();

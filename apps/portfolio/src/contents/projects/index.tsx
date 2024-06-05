@@ -10,7 +10,9 @@ import GitHubWireframe from '@/components/wireframes/GitHub';
 import NpmWireframe from '@/components/wireframes/Npm';
 
 function ProjectsContents() {
-  const [currentState, setCurrentState] = useState<'npm' | 'github'>('github');
+  const [currentState, setCurrentState] = useState<'node_api' | 'github'>(
+    'github'
+  );
 
   return (
     <>
@@ -35,11 +37,11 @@ function ProjectsContents() {
                 onClick={() => setCurrentState('github')}
               />
               <SectionButton
-                title="npm package"
+                title="node_api"
                 icon={<NpmIcon className={clsx('my-2 h-16 w-16')} />}
-                description="Install and use the package with ease thanks to its typed options."
-                active={currentState === 'npm'}
-                onClick={() => setCurrentState('npm')}
+                description="api call with node."
+                active={currentState === 'node_api'}
+                onClick={() => setCurrentState('node_api')}
               />
             </div>
           </div>
@@ -56,8 +58,8 @@ function ProjectsContents() {
                     },
                     {
                       icon: <NpmIcon className="h-4 w-4" />,
-                      title: ' npm',
-                      isActive: currentState === 'npm',
+                      title: 'node_api',
+                      isActive: currentState === 'node_api',
                     },
                   ]}
                 >
@@ -69,11 +71,10 @@ function ProjectsContents() {
                       description=" beautiful UI for a portfolio should be visually appealing and user-friendly, showcasing your work through a clean, modern design with intuitive navigation."
                     />
                   )}
-                  {currentState === 'npm' && (
+                  {currentState === 'node_api' && (
                     <NpmWireframe
-                      packageName="portfolio"
-                      description=""
-                      isWithTypeScript
+                      packageName="node_api"
+                      description="api calling with node js "
                     />
                   )}
                 </AppWindow>
