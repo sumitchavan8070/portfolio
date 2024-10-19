@@ -7,8 +7,6 @@ import Provider from '@/providers';
 import type { NextPage } from 'next';
 import type { AppProps } from 'next/app';
 import type { ReactElement, ReactNode } from 'react';
-// import { analytics } from '@/contents/firebaseConfig';
-
 
 import '@/styles/main.css';
 
@@ -35,16 +33,12 @@ function App({ Component, pageProps, router }: AppPropsWithLayout) {
     getLayout = getDefaultLayout;
   }
 
-  // if (analytics) {
-  //   console.log("Firebase Analytics initialized");
-  // }
-
   return (
     <Provider>
       <RootLayout>
         {/* eslint-disable-next-line react/jsx-props-no-spreading */}
         {getLayout(<Component {...pageProps} />)}
-        <GoogleAnalytics gaId="G-Z5JLHP7TT9" />
+        <GoogleAnalytics gaId="G-FB9QLDNKNN" />
       </RootLayout>
     </Provider>
   );
