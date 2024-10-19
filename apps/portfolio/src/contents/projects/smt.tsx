@@ -8,7 +8,8 @@ interface Project {
     link: string;
 }
 
-const PreviousProjects: React.FC = () => {
+// Change to a function declaration
+const PreviousProjects = () => {
     const projects: Project[] = [
         {
             title: "Gradding App",
@@ -64,8 +65,8 @@ const PreviousProjects: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-extrabold tracking-tight text-center mb-20">Previous Projects</h2>
             <div className="mt-12 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
-                {projects.map((project, index) => (
-                    <div key={project?.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden bg-[#0a0a0a] project-card">
+                {projects.map((project) => (
+                    <div key={project.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden bg-[#0a0a0a] project-card">
                         <div className="flex-shrink-0">
                             <img src={project.imageUrl} alt={project.title} className="h-48 w-full object-cover" />
                         </div>
@@ -84,6 +85,6 @@ const PreviousProjects: React.FC = () => {
             </div>
         </div>
     );
-};
+}
 
 export default PreviousProjects;
