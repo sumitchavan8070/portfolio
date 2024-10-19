@@ -28,7 +28,6 @@
     "axios": "^1.2.2",
     "clsx": "^1.2.1",
     "dayjs": "^1.11.7",
-    "firebase": "^10.14.1",   
     "framer-motion": "7.7.0",
     "front-matter": "^4.0.2",
     "jsonata": "^2.0.1",
