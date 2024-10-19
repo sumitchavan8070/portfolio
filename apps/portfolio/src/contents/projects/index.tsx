@@ -8,6 +8,7 @@ import SectionTitle from '@/components/sections/SectionTitle';
 import AppWindow from '@/components/wireframes/AppWindow';
 import GitHubWireframe from '@/components/wireframes/GitHub';
 import NpmWireframe from '@/components/wireframes/Npm';
+import PreviousProjects from './smt';
 
 function ProjectsContents() {
   const [currentState, setCurrentState] = useState<'node_api' | 'github'>(
@@ -82,6 +83,16 @@ function ProjectsContents() {
             </div>
           </div>
         </div>
+        <div className={clsx('hidden flex-1 flex-col gap-3 pt-8', 'lg:flex')}>
+
+          <PreviousProjects />
+        </div>
+
+
+
+
+
+
       </SectionContent>
     </>
   );
