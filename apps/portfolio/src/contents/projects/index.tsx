@@ -8,7 +8,6 @@ import SectionTitle from '@/components/sections/SectionTitle';
 import AppWindow from '@/components/wireframes/AppWindow';
 import GitHubWireframe from '@/components/wireframes/GitHub';
 import NpmWireframe from '@/components/wireframes/Npm';
-import PreviousProjects from './projects';
 
 function ProjectsContents() {
   const [currentState, setCurrentState] = useState<'node_api' | 'github'>(
@@ -84,7 +83,6 @@ function ProjectsContents() {
           </div>
         </div>
 
-        <PreviousProjects />
 
 
 
