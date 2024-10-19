@@ -9,7 +9,7 @@ interface Project {
 }
 
 // Change to a function declaration
-const PreviousProjects = () => {
+function PreviousProjects() {
     const projects: Project[] = [
         {
             title: "Gradding App",
