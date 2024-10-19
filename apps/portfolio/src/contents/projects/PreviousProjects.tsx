@@ -1,9 +1,15 @@
 import React from 'react';
 
-const PreviousProjects = () => {
+// Define a type for the project object
+interface Project {
+    title: string;
+    description: string;
+    imageUrl: string;
+    link: string;
+}
 
-
-    const projects = [
+const PreviousProjects: React.FC = () => {
+    const projects: Project[] = [
         {
             title: "Gradding App",
             description: "Gradding is a Flutter-based mobile application designed to assist students who aspire to study abroad.",
@@ -22,48 +28,36 @@ const PreviousProjects = () => {
             imageUrl: "https://play-lh.googleusercontent.com/vesmOnDN2G8sbWoKp9RNr2g5fVrRkwQv3b0Q6VEXt7FO3ts50FZ9ux40x02YMYc_vFw=w416-h235-rw",
             link: "https://play.google.com/store/apps/details?id=com.gradding.predictor&hl=en_IN",
         },
-
-
         {
             title: "IELTS Preparation",
             description: "Developed by Gradding for students who are specifically tailored for IELTS, PTE, GMAT, SAT, and ACT exams. It provides necessary preparation materials, practice tests, and personalized learning plans to excel in these standardized tests.",
             imageUrl: "https://play-lh.googleusercontent.com/3cuds4ge2Fke7yJXn7HsTnr7zdcDVoIo7SC3ICotTY005Yy7k6mtS2ssROAx3vBE3g=w416-h235-rw",
             link: "https://play.google.com/store/apps/details?id=com.gradding.ieltsprep&hl=en-IN",
         },
-
         {
             title: "MySIP Online",
             description: "Mysiponline is a popular online platform that allows users to check their SIP (Subscriber Identity Module) balance, recharge, and manage their mobile phone accounts. The website provides a user-friendly interface to access various services, including bill payments, data usage, and call logs.",
             imageUrl: "https://play-lh.googleusercontent.com/rvobt18fxbVYIBbSHh7PtRa0JfhNPD3D3YYaIxLvowcQ7KLs9Tl3dPqjJW6kpAfBrBs=w416-h235-rw",
             link: "https://play.google.com/store/apps/details?id=com.mysiponline&hl=en_US",
         },
-
-
         {
             title: "MySIP Calculator",
             description: "Mysiponline is a popular online platform that allows users to invest and check their SIP. On this App, Calculate your future value of monthly SIP investment compounded monthly or annually.",
             imageUrl: "https://play-lh.googleusercontent.com/kWxTSxa9BysbdUkgfZMkgxLuKw3XMYowGE6-cs6j-69cW2uElF-uevlJRTnvCRAiaeg=w416-h235-rw",
             link: "https://play.google.com/store/apps/details?id=com.mysiponline.calculator&hl=en_IN",
         },
-
-
-
         {
             title: "WoodenStreet",
-            description: " The Wooden Street application is an online marketplace that specializes in sourcing authentic, handmade, and unique wooden decorative items from artisans and craftspeople worldwide. Their platform allows users to discover and purchase one-of-a-kind wooden products, such as wooden street art, wooden furniture, and decorative items!",
+            description: "The Wooden Street application is an online marketplace that specializes in sourcing authentic, handmade, and unique wooden decorative items from artisans and craftspeople worldwide. Their platform allows users to discover and purchase one-of-a-kind wooden products, such as wooden street art, wooden furniture, and decorative items!",
             imageUrl: "https://www.woodenstreet.com/images/cover.gif",
             link: "https://play.google.com/store/apps/details?id=com.woodenstreet&hl=en_US",
         },
-
         {
             title: "MRP",
-            description: " Global assignment help refers to online academic assistance provided by experts to students worldwide. This type of help is particularly useful for students who are struggling with complex assignments, research papers, or projects. Global assignment help services offer a range of benefits, including timely submissions, improved grades, and enhanced learning outcomes",
+            description: "Global assignment help refers to online academic assistance provided by experts to students worldwide. This type of help is particularly useful for students who are struggling with complex assignments, research papers, or projects. Global assignment help services offer a range of benefits, including timely submissions, improved grades, and enhanced learning outcomes.",
             imageUrl: "https://www.globalassignmenthelp.com/images/og_GAH.jpg",
             link: "https://play.google.com/store/apps/details?id=com.globalassignmenthelp&hl=en_US",
         },
-
-        //sumit chavan 
-
     ];
 
     return (
