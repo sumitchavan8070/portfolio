@@ -1,4 +1,5 @@
 {
+  "name" :"sumitchavan8070", 
   "private": true,
   "scripts": {
     "build": "turbo run build",
