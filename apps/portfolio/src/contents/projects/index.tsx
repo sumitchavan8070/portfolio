@@ -84,8 +84,11 @@ function ProjectsContents() {
           </div>
         </div>
 
+        <div className={clsx('hidden flex-1 flex-col gap-3 pt-8', 'lg:flex')}>
+          <PreviousProjects />
+        </div>
 
-        <PreviousProjects />
+
 
       </SectionContent>
     </>
