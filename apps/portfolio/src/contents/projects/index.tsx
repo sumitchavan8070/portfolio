@@ -20,7 +20,7 @@ function ProjectsContents() {
       <SectionTitle
         title="Github"
         caption="Explore github "
-        description="Discover a variety of projects showcasing my skills in web development, software engineering, and more. Follow my GitHub for the latest updates and contributions."
+        description="Discover a variety of projects showcasing my skills in  development, software engineering, and more. Follow my GitHub for the latest updates and contributions."
         button={{
           title: 'Explore more',
           href: 'https://github.com/sumitchavan8070',

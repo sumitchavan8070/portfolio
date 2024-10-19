@@ -63,7 +63,7 @@ function PreviousProjects() {
 
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-extrabold tracking-tight text-center mb-20">Previous Projects</h2>
+            <h2 className="text-3xl font-extrabold tracking-tight text-center mb-20"></h2>
             <div className="mt-12 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
                 {projects.map((project) => (
                     <div key={project.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden bg-[#0a0a0a] project-card">
