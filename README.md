@@ -7,7 +7,8 @@
 
 A monorepo for my personal website and projects, built with Turborepo and pnpm.
 
-## [Click here https://portfolio-portfolio-zeta.vercel.app/](https://portfolio-portfolio-zeta.vercel.app/)
+## [Click here portfolio](https://sumit--portfoliio-zeta.vercel.app/)
+
 
 A personal website with a blog, project showcase, and work information.
 
