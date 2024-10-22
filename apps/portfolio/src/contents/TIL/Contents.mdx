@@ -114,22 +114,145 @@ By using copyWith, you inherit the base style defined in the theme and customize
 
   <TIL.Item>
 
-    ## Turborepo dependsOn
+    ## pubspec.yaml
 
     <TIL.ItemTags>
-      <TIL.ItemTag>turborepo</TIL.ItemTag>
-      <TIL.ItemTag>monorepo</TIL.ItemTag>
+      <TIL.ItemTag>pubspec.yaml</TIL.ItemTag>
     </TIL.ItemTags>
 
     ```json {copy:false} {footer:false}
-    "build": {
-      "dependsOn": ["^lint", "test"]
-    },
+    name: flutter_app
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+version: 1.0.0+1
+
+
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  flutter_localizations:
+    sdk: flutter
+
+  cached_network_image: ^3.2.3
+  file_picker: 5.2.6
+  flutter_svg: 2.0.4
+
+#  image_picker: 0.8.5+3
+  lottie: 1.2.1
+  #  shared_preferences: 2.0.15
+  pinput: ^4.0.0
+  contacts_service: ^0.6.3
+  permission_handler: ^10.2.0
+
+  internet_connection_checker_plus: ^1.0.1
+
+  url_launcher: 6.1.10
+  carousel_slider: ^4.2.1
+
+  flutter_file_downloader: ^1.1.2
+  flutter_inappwebview: ^5.8.0
+  chewie: ^1.5.0
+  package_info: ^2.0.2
+
+  dio: ^5.4.0
+  get_storage: ^2.1.1
+  get: ^4.6.6
+  go_router: ^12.0.3
+  in_app_update: ^4.2.3
+  animations: ^2.0.3
+
+  flutter_native_splash: ^2.2.19
+
+
+
+  another_stepper: ^1.2.2
+#  open_filex: ^4.5.0
+  flutter_local_notifications: ^15.1.0+1
+
+  # -------- x firebase x ---------
+  google_sign_in: 6.0.2
+  firebase_messaging: ^14.4.1
+  firebase_core: ^2.24.2
+  firebase_crashlytics: ^3.2.0
+  firebase_analytics: ^10.3.0
+  firebase_in_app_messaging: ^0.7.4+8
+  firebase_dynamic_links: ^5.4.8
+  firebase_performance: ^0.9.3+8
+  validator_forge: ^1.0.0
+
+#  document_file_save_plus: 2.0.0
+
+
+  package_name:
+    path: package_path
+
+
+
+dev_dependencies:
+  flutter_launcher_icons: 0.12.0
+  package_rename: ^1.5.0
+  logger: ^2.1.0
+
+
+  flutter_test:
+    sdk: flutter
+  test: ^1.24.9
+
+
+flutter_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: 'assets/png_images/app_launcher_icon.png'
+
+
+flutter:
+
+
+  uses-material-design: true
+
+  assets:
+    - assets/rasters/
+    - assets/icons/
+    - assets/lottie/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: font/Poppins-Regular.ttf
+          weight: 400
+
+        - asset: font/Poppins-Bold.ttf
+          weight: 700
+
+        - asset: font/Poppins-Medium.ttf
+          weight: 500
+
+        - asset: font/Poppins-Light.ttf
+          weight: 300
+
+
+#dart run flutter_native_splash:create
+flutter_native_splash:
+  android: true
+  ios: true
+  color: "#FFFFFF"
+  image: "assets/icons/android12Splash.png"
+  android_12:
+    image: "assets/icons/android12Splash.png"
+
     ```
 
-    `dependsOn` dengan ^ menandakan task dari package lain, sedangkan yang tanpa ^ task dari package itu sendiri.
+This  **pubspec.yaml** file defines the configuration for a Flutter project called `flutter_app`. The project is built on Flutter SDK version `>=3.2.0 <4.0.0`. It includes various dependencies to enhance app functionality.
 
-    Misal: app A pas mau build harus running tasks `lint` di semua package dependenciesnya, dan juga harus running task `test` app A itu sendiri.
 
   </TIL.Item>
 
@@ -177,6 +300,30 @@ Facilitates easier scaling and feature additions. Common functions help manage a
     </video>
 
     [calendar_week_view.dart](https://gist.github.com/sumitchavan8070/8c00baa48f97e5dc56f41caad96c4bda#file-calander_week_view-dart)
+
+  </TIL.Item>
+</TIL.Items>
+
+
+
+<TIL.Items date="2023-01-15">
+
+  <TIL.Item>
+
+    ## Shimmer 
+
+    <TIL.ItemTags>
+      <TIL.ItemTag>Loader</TIL.ItemTag>
+    </TIL.ItemTags>
+
+
+    <Image
+      src="/assets/images/skelton_loading.gif"
+      alt="Current enjidev workspace"
+      width={800}
+      height={200}
+       style={{ marginLeft: 40 }}
+    />
 
   </TIL.Item>
 </TIL.Items>
