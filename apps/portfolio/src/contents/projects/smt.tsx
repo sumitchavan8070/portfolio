@@ -63,19 +63,27 @@ function PreviousProjects() {
 
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-extrabold tracking-tight text-center mb-20">Previous Projects</h2>
-            <div className="mt-12 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+            <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-center mb-8 sm:mb-12 lg:mb-16">
+                Current Projects
+            </h2>
+            <p className="text-1xl sm:text-1xl font-extrabold tracking-tight text-center mb-8 sm:mb-12 lg:mb-16">All projects are available on the Play Store.</p>
+
+            <div className="grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                 {projects.map((project) => (
-                    <div key={project.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden bg-[#0a0a0a] project-card">
+                    <div key={project.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden bg-[#0a0a0a] project-card min-h-[400px]">
                         <div className="flex-shrink-0">
-                            <img src={project.imageUrl} alt={project.title} className="h-48 w-full object-cover" />
+                            <img src={project.imageUrl} alt={project.title} className="h-48 sm:h-64 w-full object-cover" />
                         </div>
-                        <div className="flex-1 bg-transparent p-6 flex flex-col justify-between pw-bg">
+                        <div className="flex-1 p-4 sm:p-6 flex flex-col justify-between">
                             <div className="flex-1">
                                 <a href={project.link} target="_blank" rel="noopener noreferrer">
                                     <div className="block mt-2">
-                                        <p className="text-xl font-semibold text-gray-300">{project.title}</p>
-                                        <p className="mt-3 text-base text-gray-300 description truncate">{project.description}</p>
+                                        <p className="text-lg sm:text-xl font-semibold text-gray-300">
+                                            {project.title}
+                                        </p>
+                                        <p className="mt-2 text-sm sm:text-base text-gray-500">
+                                            {project.description}
+                                        </p>
                                     </div>
                                 </a>
                             </div>
