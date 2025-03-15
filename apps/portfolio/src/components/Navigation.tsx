@@ -66,25 +66,18 @@ function Navbar() {
               </li>
             </ul>
           </nav>
-          <ul className={clsx('flex items-center')}>
+          <ul className={clsx('m-4 flex items-center')}>
             <li className={clsx('hidden', 'sm:block')}>
               <NavIcon
                 href="https://github.com/sumitchavan8070"
-                icon={<GitHubIcon className={clsx('h-5 w-5')} />}
+                icon={<GitHubIcon className={clsx(' h-20 w-20')} />}
                 title="GitHub"
               />
             </li>
-            <li className={clsx('hidden', 'sm:block')}>
-              <div
-                className={clsx(
-                  'ml-2 mr-4 h-3 w-[1px] bg-slate-200',
-                  'dark:bg-slate-700'
-                )}
-              />
-            </li>
-            <li className={clsx('mr-2')}>
+
+            {/* <li className={clsx('mr-2')}>
               <NavIconQuickAccess />
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

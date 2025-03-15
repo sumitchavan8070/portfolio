@@ -1,16 +1,27 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalEnv": ["NEXT_PUBLIC_VERCEL_ENV", "NEXT_PUBLIC_VERCEL_URL"],
-  "pipeline": {
+  "globalEnv": [
+    "NEXT_PUBLIC_VERCEL_ENV",
+    "NEXT_PUBLIC_VERCEL_URL"
+  ],
+  "tasks": {
     "build": {
-      "dependsOn": ["db:generate", "^build"],
-      "outputs": ["dist/**", ".next/**"]
+      "dependsOn": [
+        "db:generate",
+        "^build"
+      ],
+      "outputs": [
+        "dist/**",
+        ".next/**"
+      ]
     },
     "lint": {
       "outputs": []
     },
     "dev": {
-      "dependsOn": ["db:generate"],
+      "dependsOn": [
+        "db:generate"
+      ],
       "cache": false
     },
     "clean": {

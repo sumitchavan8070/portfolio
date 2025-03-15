@@ -86,7 +86,6 @@ function ProjectsContents() {
         <div className={clsx('flex-1 flex-col gap-3 pt-8', 'lg:flex')}>
           <PreviousProjects />
         </div>
-
       </SectionContent>
     </>
   );
