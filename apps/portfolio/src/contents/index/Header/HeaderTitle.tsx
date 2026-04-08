@@ -91,10 +91,12 @@ function HeaderTitle() {
               'dark:text-slate-300'
             )}
           >
-            Flutter Developer
+            Senior Software Engineer
           </strong>{' '}
-          who loves intuitive,{' '}
-          <span className={clsx('block')}>clean and modern UI design.</span>
+          focused on Flutter apps, Node.js services,
+          <span className={clsx('block')}>
+            and clean product experiences that ship well.
+          </span>
         </m.h1>
       </span>
     </div>

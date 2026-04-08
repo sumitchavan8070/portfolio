@@ -24,8 +24,8 @@ function FeaturedCardSection() {
               <SparklesIcon className={clsx('h-5 w-5 text-white')} />
             </div>
           }
-          title="User-Friendly"
-          desc="Design interfaces that are both visually appealing and easy to navigate, ensuring an optimal user experience."
+          title="Shipped Products"
+          desc="Build mobile experiences that are not just visually polished, but also launched, tested, and used in real-world production environments."
         />
         <FeaturedCard
           icon={
@@ -38,8 +38,8 @@ function FeaturedCardSection() {
               <HeartIcon className={clsx('h-5 w-5 text-white')} />
             </div>
           }
-          title="Attention to Detail"
-          desc="Focus on accessibility, UI coherence, and enhancing the overall user experience through meticulous design."
+          title="UI That Feels Thoughtful"
+          desc="Care deeply about interface clarity, consistency, and product details so the final experience feels clean, usable, and intentional."
         />
         <FeaturedCard
           icon={
@@ -52,8 +52,8 @@ function FeaturedCardSection() {
               <CodeIcon className={clsx('h-5 w-5 text-white')} />
             </div>
           }
-          title="Elegant & Efficient"
-          desc="Prioritize writing clean, maintainable code while optimizing performance to deliver smooth and responsive applications."
+          title="Flutter + Backend Thinking"
+          desc="Bring together Flutter development, Node.js APIs, and maintainable architecture to support products end to end."
         />
       </div>
     </div>

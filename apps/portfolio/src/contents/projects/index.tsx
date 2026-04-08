@@ -8,6 +8,7 @@ import SectionTitle from '@/components/sections/SectionTitle';
 import AppWindow from '@/components/wireframes/AppWindow';
 import GitHubWireframe from '@/components/wireframes/GitHub';
 import NpmWireframe from '@/components/wireframes/Npm';
+
 import PreviousProjects from './smt';
 
 function ProjectsContents() {
@@ -17,7 +18,7 @@ function ProjectsContents() {
 
   return (
     <>
-      <SectionTitle
+      {/* <SectionTitle
         title="Github"
         caption="Explore github "
         description="Discover a variety of projects showcasing my skills in  development, software engineering, and more. Follow my GitHub for the latest updates and contributions."
@@ -25,9 +26,9 @@ function ProjectsContents() {
           title: 'Explore more',
           href: 'https://github.com/sumitchavan8070',
         }}
-      />
+      /> */}
       <SectionContent>
-        <div className={clsx('flex', 'lg:gap-12')}>
+        {/* <div className={clsx('flex', 'lg:gap-12')}>
           <div className={clsx('hidden flex-1 flex-col gap-3 pt-8', 'lg:flex')}>
             <div className={clsx('flex flex-col gap-3')}>
               <SectionButton
@@ -82,7 +83,7 @@ function ProjectsContents() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className={clsx('flex-1 flex-col gap-3 pt-8', 'lg:flex')}>
           <PreviousProjects />
         </div>
